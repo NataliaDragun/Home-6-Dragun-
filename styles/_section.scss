@@ -1,0 +1,223 @@
+.description {
+  background-color: $pink;
+  color: $white;
+  text-align: center;
+
+  padding-top: 115px;
+  margin: 0;
+}
+
+// ABOUT
+.about {
+  text-align: center;
+  color:$pink;
+
+  @include map();
+
+  &__description {
+    color: $pink;
+
+    padding: .5rem;
+
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $pink;
+  
+    padding: 2rem;
+    &:hover {
+      @include hover;
+
+    }
+  }
+} 
+
+// Deliver
+.deliver {
+  text-align: center;
+
+  background-color: $green-darken;
+  border-radius: 10px;
+
+  padding: 1rem;
+  margin: 50px auto;
+  width: 90%;
+
+  &__lists {
+    margin: 0;
+
+  }
+
+  &__list {
+    @include list();
+
+  }
+
+  &__image {
+    border-radius: 50%;
+    padding: 1rem;
+
+    background-color: $white;
+
+  }
+
+  &__description {
+    padding: .5rem;
+  }
+}
+
+// PRODUCTS
+.categories {
+  margin:0 auto;
+  width: 85%;
+
+  &__lists {
+    margin: 0;
+
+  }
+
+  &__list {
+    @include list();
+
+  }
+
+  &__image {
+    width: 220px;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 0 6px 5px $shadow;
+    }
+  }
+}
+
+// SLIDER
+.swiper {
+  width: 100%;
+  height: auto;
+  
+}
+
+.swiper-button-prev:after {
+  content: '';
+  color: $pink;
+}
+
+.swiper-button-next:after {
+  content: '';
+  color: $pink;
+}
+
+.product {
+  background-color: $green-darken;
+  color: $pink;
+  text-align: center;
+
+  border-radius: 1rem;
+
+  position: relative;
+  width: calc(100% / 4);
+  margin: 1rem;
+  padding: 1rem;
+
+  &__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 2rem 1rem 2rem 1rem;
+  
+  }  
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+// CONTACTS
+.contact {
+  text-align: center;
+
+  @include map();
+  margin-bottom: 50px;
+
+  &__description {
+    color: $white;
+    
+    padding: 1rem;
+
+    &_find {
+      font-size: $font-20;
+      font-weight: bold;
+
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+      @include hover();
+    }
+
+    &_underline {
+      text-decoration: underline;
+      color: $white;
+    &:hover {
+      @include hover();
+    }
+  }
+}
+} 
+
+// FORM
+.form {
+  color: $white;
+
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+form {
+  background-color: $pink;
+  text-align: center;
+  border-radius: 10px;
+
+  width: 300px;
+  height: auto;
+  padding: 1rem;
+  margin: 0 auto;
+
+}
+
+input {
+  background-color: $form-color;
+
+  padding: .5rem;
+  border-radius: 5px;
+  border: none;
+  &::placeholder {
+    color: $white;
+
+  }
+}
+
+.account {
+  margin-top: 10px;
+  padding: .5rem;
+
+  &__name {
+    width: 100%;
+  }
+
+}
+
+
+ 
+   
+
+
+

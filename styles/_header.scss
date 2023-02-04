@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  width: 100vw;
+  background-color: $green-dark;
+
+  z-index: 2;
+
+  &-top {
+    float: left;
+
+  }
+
+  &-bottom {
+    text-align: right;
+    padding: 1rem;
+
+    &__lists {
+      margin: 0;
+
+    }
+
+    &__list {
+      display: inline-block;
+      list-style: none;
+
+      padding: .5rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        &:hover {
+          @include hover();
+        }
+      }
+
+    &__image {
+          width: 25px;
+          height: 25px;
+
+        }
+      }
+    }
+
+  
+ 
